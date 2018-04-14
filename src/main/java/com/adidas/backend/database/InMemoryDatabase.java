@@ -39,8 +39,11 @@ public class InMemoryDatabase {
         stores.put(3L, new Store(3L, "Bridge", "Zaragoza"));
         stores.put(4L, new Store(4L, "Paella", "Valencia"));
 
-        products.put(1L, new Product(1L, "Cool Sneakers", "40", SHOES, "https://www.adidas.es/dis/dw/image/v2/aagl_prd/on/demandware.static/-/Sites-adidas-products/default/dw5dae7545/zoom/CQ2624_01_standard.jpg?sh=840&strip=false&sw=840"));
-        products.put(2L, new Product(2L, "Cool Sneakers", "41", SHOES, "https://www.adidas.es/dis/dw/image/v2/aagl_prd/on/demandware.static/-/Sites-adidas-products/default/dwc4d7e56c/zoom/CQ2373_01_standard.jpg?sh=840&strip=false&sw=840"));
+        products.put(1L, new Product(1L, "Cool Sneakers", "40", SHOES, "1.jpg"));
+        products.put(2L, new Product(2L, "Cool Sneakers", "41", SHOES, "1.jpg"));
+        //products.put(1L, new Product(1L, "Cool Sneakers", "40", SHOES, "https://www.adidas.es/dis/dw/image/v2/aagl_prd/on/demandware.static/-/Sites-adidas-products/default/dw5dae7545/zoom/CQ2624_01_standard.jpg?sh=840&strip=false&sw=840"));
+        //products.put(2L, new Product(2L, "Cool Sneakers", "41", SHOES, "https://www.adidas.es/dis/dw/image/v2/aagl_prd/on/demandware.static/-/Sites-adidas-products/default/dwc4d7e56c/zoom/CQ2373_01_standard.jpg?sh=840&strip=false&sw=840"));
+
         products.put(3L, new Product(3L, "Original Boot", "38", SHOES, "https://www.adidas.es/dis/dw/image/v2/aagl_prd/on/demandware.static/-/Sites-adidas-products/default/dwc7a601dc/zoom/CQ2626_01_standard.jpg?sh=840&strip=false&sw=840"));
         products.put(4L, new Product(4L, "Original Boot", "43", SHOES, "https://www.adidas.es/dis/dw/image/v2/aagl_prd/on/demandware.static/-/Sites-adidas-products/default/dw44c162a4/zoom/BB5476_01_standard.jpg?sh=840&strip=false&sw=840"));
         products.put(5L, new Product(5L, "Original Boot", "47", SHOES, "https://www.adidas.es/dis/dw/image/v2/aagl_prd/on/demandware.static/-/Sites-adidas-products/default/dw2051f732/zoom/B22681_01_standard.jpg?sh=840&strip=false&sw=840"));

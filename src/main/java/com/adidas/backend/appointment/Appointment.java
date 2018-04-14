@@ -1,54 +1,21 @@
 package com.adidas.backend.appointment;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 import java.time.DayOfWeek;
 
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class Appointment {
 
     private Long storeId;
     private Long productId;
     private DayOfWeek dayOfWeek;
     private Integer hourOfDay;
-
-    public Appointment() {
-    }
-
-    public Appointment(Long storeId, Long productId, DayOfWeek dayOfWeek, Integer hourOfDay) {
-        this.storeId = storeId;
-        this.productId = productId;
-        this.dayOfWeek = dayOfWeek;
-        this.hourOfDay = hourOfDay;
-    }
-
-    public Long getStoreId() {
-        return storeId;
-    }
-
-    public void setStoreId(Long storeId) {
-        this.storeId = storeId;
-    }
-
-    public Long getProductId() {
-        return productId;
-    }
-
-    public void setProductId(Long productId) {
-        this.productId = productId;
-    }
-
-    public DayOfWeek getDayOfWeek() {
-        return dayOfWeek;
-    }
-
-    public void setDayOfWeek(DayOfWeek dayOfWeek) {
-        this.dayOfWeek = dayOfWeek;
-    }
-
-    public Integer getHourOfDay() {
-        return hourOfDay;
-    }
-
-    public void setHourOfDay(Integer hourOfDay) {
-        this.hourOfDay = hourOfDay;
-    }
 
 }
