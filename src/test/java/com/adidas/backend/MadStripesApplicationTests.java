@@ -1,4 +1,4 @@
-package com.adidas.madstripes;
+package com.adidas.backend;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

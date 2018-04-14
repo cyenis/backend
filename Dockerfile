@@ -1,7 +1,7 @@
 FROM openjdk:8-jre
 
-MAINTAINER "Mad Stripes - Adidas"
+MAINTAINER "Mad Stripes Backend - Adidas"
 
-ADD target/madstripes-0.0.1-SNAPSHOT.jar /opt/app.jar
+ADD target/backend-0.0.1-SNAPSHOT.jar /opt/app.jar
 
 CMD ["java", "-jar", "/opt/app.jar"]
