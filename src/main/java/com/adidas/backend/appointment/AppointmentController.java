@@ -1,6 +1,7 @@
 package com.adidas.backend.appointment;
 
 import com.adidas.backend.database.InMemoryDatabase;
+import com.adidas.backend.scheduling.ScheduledTasks;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -11,10 +12,12 @@ import java.util.Collection;
 public class AppointmentController {
 
     private final InMemoryDatabase inMemoryDatabase;
+    private final ScheduledTasks scheduledTasks;
 
     @Autowired
-    public AppointmentController(InMemoryDatabase inMemoryDatabase) {
+    public AppointmentController(InMemoryDatabase inMemoryDatabase, ScheduledTasks scheduledTasks) {
         this.inMemoryDatabase = inMemoryDatabase;
+        this.scheduledTasks = scheduledTasks;
     }
 
     @GetMapping(value = "/appointment")
@@ -25,6 +28,7 @@ public class AppointmentController {
     @PostMapping(value = "/appointment")
     public Long saveAppointment(@RequestBody Appointment appointment) {
         inMemoryDatabase.decreaseStock(appointment.getStoreId(), appointment.getProductId());
+        scheduledTasks.registerAppointment(appointment);
         return inMemoryDatabase.saveAppointment(appointment);
     }
 

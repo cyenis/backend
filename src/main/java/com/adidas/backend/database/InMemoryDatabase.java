@@ -6,6 +6,7 @@ import com.adidas.backend.stock.Stock;
 import com.adidas.backend.store.Store;
 
 import javax.annotation.PostConstruct;
+import java.time.DayOfWeek;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
@@ -42,13 +43,13 @@ public class InMemoryDatabase {
         products.put(2L, new Product(2L, "Cool Sneakers", "41", SHOES, "https://www.adidas.es/dis/dw/image/v2/aagl_prd/on/demandware.static/-/Sites-adidas-products/default/dwc4d7e56c/zoom/CQ2373_01_standard.jpg?sh=840&strip=false&sw=840"));
         products.put(3L, new Product(3L, "Original Boot", "38", SHOES, "https://www.adidas.es/dis/dw/image/v2/aagl_prd/on/demandware.static/-/Sites-adidas-products/default/dwc7a601dc/zoom/CQ2626_01_standard.jpg?sh=840&strip=false&sw=840"));
         products.put(4L, new Product(4L, "Original Boot", "43", SHOES, "https://www.adidas.es/dis/dw/image/v2/aagl_prd/on/demandware.static/-/Sites-adidas-products/default/dw44c162a4/zoom/BB5476_01_standard.jpg?sh=840&strip=false&sw=840"));
-        products.put(5L, new Product(5L, "Original Boot", "43", SHOES, "https://www.adidas.es/dis/dw/image/v2/aagl_prd/on/demandware.static/-/Sites-adidas-products/default/dw2051f732/zoom/B22681_01_standard.jpg?sh=840&strip=false&sw=840"));
-        products.put(6L, new Product(6L, "Original Boot", "43", SHOES, "https://www.adidas.es/dis/dw/image/v2/aagl_prd/on/demandware.static/-/Sites-adidas-products/default/dw5af3ce36/zoom/BB2091_01_standard.jpg?sh=840&strip=false&sw=840"));
-        products.put(7L, new Product(7L, "Original Boot", "43", SHOES, "https://www.adidas.es/dis/dw/image/v2/aagl_prd/on/demandware.static/-/Sites-adidas-products/default/dw9d6ca300/zoom/CQ2631_01_standard.jpg?sh=840&strip=false&sw=840"));
-        products.put(8L, new Product(8L, "Original Boot", "43", SHOES, "https://www.adidas.es/dis/dw/image/v2/aagl_prd/on/demandware.static/-/Sites-adidas-products/default/dw3c05e2f0/zoom/DA9165_01_standard.jpg?sh=840&strip=false&sw=840"));
-        products.put(9L, new Product(9L, "Original Boot", "43", SHOES, "https://www.adidas.es/dis/dw/image/v2/aagl_prd/on/demandware.static/-/Sites-adidas-products/default/dw17a358cc/zoom/CQ0414_01_standard.jpg?sh=840&strip=false&sw=840"));
-        products.put(10L, new Product(10L, "Original Boot", "43", SHOES, "https://www.adidas.es/dis/dw/image/v2/aagl_prd/on/demandware.static/-/Sites-adidas-products/default/dw13a39234/zoom/B27140_01_standard.jpg?sh=840&strip=false&sw=840"));
-        products.put(11L, new Product(11L, "Original Boot", "43", SHOES, "https://www.adidas.es/dis/dw/image/v2/aagl_prd/on/demandware.static/-/Sites-adidas-products/default/dw5abb04a3/zoom/AC8597_01_standard.jpg?sh=840&strip=false&sw=840"));
+        products.put(5L, new Product(5L, "Original Boot", "47", SHOES, "https://www.adidas.es/dis/dw/image/v2/aagl_prd/on/demandware.static/-/Sites-adidas-products/default/dw2051f732/zoom/B22681_01_standard.jpg?sh=840&strip=false&sw=840"));
+        products.put(6L, new Product(6L, "Original Boot", "50", SHOES, "https://www.adidas.es/dis/dw/image/v2/aagl_prd/on/demandware.static/-/Sites-adidas-products/default/dw5af3ce36/zoom/BB2091_01_standard.jpg?sh=840&strip=false&sw=840"));
+        products.put(7L, new Product(7L, "Original Boot", "36", SHOES, "https://www.adidas.es/dis/dw/image/v2/aagl_prd/on/demandware.static/-/Sites-adidas-products/default/dw9d6ca300/zoom/CQ2631_01_standard.jpg?sh=840&strip=false&sw=840"));
+        products.put(8L, new Product(8L, "Original Boot", "48", SHOES, "https://www.adidas.es/dis/dw/image/v2/aagl_prd/on/demandware.static/-/Sites-adidas-products/default/dw3c05e2f0/zoom/DA9165_01_standard.jpg?sh=840&strip=false&sw=840"));
+        products.put(9L, new Product(9L, "Original Boot", "27", SHOES, "https://www.adidas.es/dis/dw/image/v2/aagl_prd/on/demandware.static/-/Sites-adidas-products/default/dw17a358cc/zoom/CQ0414_01_standard.jpg?sh=840&strip=false&sw=840"));
+        products.put(10L, new Product(10L, "Original Boot", "28", SHOES, "https://www.adidas.es/dis/dw/image/v2/aagl_prd/on/demandware.static/-/Sites-adidas-products/default/dw13a39234/zoom/B27140_01_standard.jpg?sh=840&strip=false&sw=840"));
+        products.put(11L, new Product(11L, "Original Boot", "29", SHOES, "https://www.adidas.es/dis/dw/image/v2/aagl_prd/on/demandware.static/-/Sites-adidas-products/default/dw5abb04a3/zoom/AC8597_01_standard.jpg?sh=840&strip=false&sw=840"));
 
         products.put(12L, new Product(12L, "Spain", "40", CLOTHES, "https://www.adidas.es/dis/dw/image/v2/aagl_prd/on/demandware.static/-/Sites-adidas-products/default/dwe2b9a02c/zoom/CZ4546_21_model.jpg?sh=840&strip=false&sw=840"));
         products.put(13L, new Product(13L, "Argentina", "41", CLOTHES, "https://www.adidas.es/dis/dw/image/v2/aagl_prd/on/demandware.static/-/Sites-adidas-products/default/dw0a45fb0c/zoom/CW0705_21_model.jpg?sh=840&strip=false&sw=840"));
@@ -88,6 +89,15 @@ public class InMemoryDatabase {
         stocks.put("4-23", new Stock(stores.get(4L), products.get(23L), 4533));
 
         appointmentId.set(1);
+
+        appointments.put(appointmentId.getAndIncrement(), new Appointment(1L, 1L, DayOfWeek.FRIDAY, 15));
+        appointments.put(appointmentId.getAndIncrement(), new Appointment(1L, 3L, DayOfWeek.MONDAY, 10));
+        appointments.put(appointmentId.getAndIncrement(), new Appointment(2L, 8L, DayOfWeek.WEDNESDAY, 9));
+        appointments.put(appointmentId.getAndIncrement(), new Appointment(2L, 9L, DayOfWeek.MONDAY, 20));
+        appointments.put(appointmentId.getAndIncrement(), new Appointment(3L, 13L, DayOfWeek.THURSDAY, 17));
+        appointments.put(appointmentId.getAndIncrement(), new Appointment(4L, 19L, DayOfWeek.SATURDAY, 16));
+        appointments.put(appointmentId.getAndIncrement(), new Appointment(4L, 20L, DayOfWeek.SUNDAY, 13));
+        appointments.put(appointmentId.getAndIncrement(), new Appointment(4L, 21L, DayOfWeek.FRIDAY, 15));
     }
 
     public Collection<Store> getAllStores() {
@@ -115,7 +125,11 @@ public class InMemoryDatabase {
     public void decreaseStock(Long storeId, Long productId) {
         String key = String.valueOf(storeId) + "-" + String.valueOf(productId);
         Stock stock = stocks.get(key);
-        stock.setQuantity(stock.getQuantity() - 1);
+        stock.setQuantity(decreaseOrZero(stock.getQuantity()));
+    }
+
+    private Integer decreaseOrZero(Integer quantity) {
+        return quantity <= 0 ? 0 : quantity - 1;
     }
 
     public void cancelAppointment(Long appointmentId) {

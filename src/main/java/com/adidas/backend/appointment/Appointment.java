@@ -12,6 +12,13 @@ public class Appointment {
     public Appointment() {
     }
 
+    public Appointment(Long storeId, Long productId, DayOfWeek dayOfWeek, Integer hourOfDay) {
+        this.storeId = storeId;
+        this.productId = productId;
+        this.dayOfWeek = dayOfWeek;
+        this.hourOfDay = hourOfDay;
+    }
+
     public Long getStoreId() {
         return storeId;
     }
