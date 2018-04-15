@@ -41,7 +41,7 @@ public class StockController {
 
     private float getSimilarity(String incomingValue, String existingValue) {
         return new JaroWinklerDistance()
-                .apply(incomingValue, existingValue)
+                .apply(incomingValue.toLowerCase(), existingValue.toLowerCase())
                 .floatValue();
     }
 
