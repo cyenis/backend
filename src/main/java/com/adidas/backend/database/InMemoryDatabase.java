@@ -34,10 +34,13 @@ public class InMemoryDatabase {
 
     @PostConstruct
     public void init() {
-        stores.put(1L, new Store(1L, "Sagrada Familia", "Barcelona"));
+        stores.put(1L, new Store(1L, "Glories", "Barcelona"));
         stores.put(2L, new Store(2L, "Plaza Mayor", "Madrid"));
         stores.put(3L, new Store(3L, "Aljafería", "Zaragoza"));
         stores.put(4L, new Store(4L, "Bioparc", "Valencia"));
+        stores.put(5L, new Store(5L, "Maquinista", "Barcelona"));
+        stores.put(6L, new Store(6L, "Plaza Catalunya", "Barcelona"));
+        stores.put(7L, new Store(7L, "Brand Center", "Barcelona"));
 
         products.put(1L, new Product(1L, "Ecstasy", "40", SHOES, "http://www.gorgeous-cakes.co.uk/images/large/gorgeous%20cakes/Women%20Adidas%20TrainersHot%20Sale%20Design%20AR676853_LRG.jpg"));
         products.put(2L, new Product(2L, "Half Shell", "41", SHOES, "https://images.solecollector.com/complex/image/upload/cguq9gz8cfes5e7dngbs.jpg"));
@@ -65,8 +68,20 @@ public class InMemoryDatabase {
         products.put(23L, new Product(23L, "Australia", "L", CLOTHES, "https://i.ebayimg.com/images/g/TFgAAOSw~CFY6vyR/s-l300.jpg"));
 
         stocks.put("1-1", new Stock(stores.get(1L), products.get(1L), 1));
+        stocks.put("5-1", new Stock(stores.get(5L), products.get(1L), 1));
+        stocks.put("6-1", new Stock(stores.get(6L), products.get(1L), 1));
+        stocks.put("7-1", new Stock(stores.get(7L), products.get(1L), 1));
+
         stocks.put("1-2", new Stock(stores.get(1L), products.get(2L), 45));
+        stocks.put("5-2", new Stock(stores.get(5L), products.get(2L), 45));
+        stocks.put("6-2", new Stock(stores.get(6L), products.get(2L), 45));
+        stocks.put("7-2", new Stock(stores.get(7L), products.get(2L), 45));
+
         stocks.put("1-3", new Stock(stores.get(1L), products.get(3L), 56));
+        stocks.put("5-3", new Stock(stores.get(5L), products.get(3L), 56));
+        stocks.put("6-3", new Stock(stores.get(6L), products.get(3L), 56));
+        stocks.put("7-3", new Stock(stores.get(7L), products.get(3L), 56));
+
         stocks.put("1-4", new Stock(stores.get(1L), products.get(4L), 45));
         stocks.put("1-5", new Stock(stores.get(1L), products.get(5L), 41235));
         stocks.put("1-6", new Stock(stores.get(1L), products.get(6L), 45));
