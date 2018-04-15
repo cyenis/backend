@@ -34,8 +34,8 @@ public class StockController {
     public Collection<Stock> getStock(@RequestParam String productName, @RequestParam String size) {
         return inMemoryDatabase.getAllStocks()
                 .stream()
-                .filter(stock -> getSimilarity(productName, stock.getProduct().getName()) > .7f)
-                .filter(stock -> getSimilarity(size, stock.getProduct().getSize()) > .7f)
+                .filter(stock -> getSimilarity(productName, stock.getProduct().getName()) > .3f)
+                .filter(stock -> getSimilarity(size, stock.getProduct().getSize()) > .1f)
                 .collect(toList());
     }
 
