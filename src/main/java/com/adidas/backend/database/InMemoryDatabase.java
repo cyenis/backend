@@ -35,35 +35,34 @@ public class InMemoryDatabase {
     @PostConstruct
     public void init() {
         stores.put(1L, new Store(1L, "Sagrada Familia", "Barcelona"));
-        stores.put(2L, new Store(2L, "Bernabeu", "Madrid"));
-        stores.put(3L, new Store(3L, "Bridge", "Zaragoza"));
-        stores.put(4L, new Store(4L, "Paella", "Valencia"));
+        stores.put(2L, new Store(2L, "Plaza Mayor", "Madrid"));
+        stores.put(3L, new Store(3L, "Aljafería", "Zaragoza"));
+        stores.put(4L, new Store(4L, "Bioparc", "Valencia"));
 
-        products.put(1L, new Product(1L, "Cool Sneakers", "40", SHOES, "https://www.adidas.es/dis/dw/image/v2/aagl_prd/on/demandware.static/-/Sites-adidas-products/default/dw5dae7545/zoom/CQ2624_01_standard.jpg?sh=840&strip=false&sw=840"));
-        products.put(2L, new Product(2L, "Cool Sneakers", "41", SHOES, "https://www.adidas.es/dis/dw/image/v2/aagl_prd/on/demandware.static/-/Sites-adidas-products/default/dwc4d7e56c/zoom/CQ2373_01_standard.jpg?sh=840&strip=false&sw=840"));
+        products.put(1L, new Product(1L, "Ecstasy", "40", SHOES, "http://www.gorgeous-cakes.co.uk/images/large/gorgeous%20cakes/Women%20Adidas%20TrainersHot%20Sale%20Design%20AR676853_LRG.jpg"));
+        products.put(2L, new Product(2L, "Half Shell", "41", SHOES, "https://images.solecollector.com/complex/image/upload/cguq9gz8cfes5e7dngbs.jpg"));
+        products.put(3L, new Product(3L, "Superstar", "38", SHOES, "https://media.journeys.com/images/products/1_396077_ZM.JPG"));
+        products.put(4L, new Product(4L, "SL 72", "43", SHOES, "https://media.office.co.uk/medias/sys_master/root/hcc/h48/9044407320606.jpg"));
+        products.put(5L, new Product(5L, "Stan Smith", "47", SHOES, "https://media.journeys.com/images/products/1_396087_ZM.JPG"));
+        products.put(6L, new Product(6L, "Gazelle", "50", SHOES, "https://media.journeys.com/images/products/1_428680_ZM.JPG"));
+        products.put(7L, new Product(7L, "Top Ten", "36", SHOES, "http://s7d1.scene7.com/is/image/ShiekhShoes/10-7774.1A?$shiekh_large$"));
+        products.put(8L, new Product(8L, "Americana", "48", SHOES, "https://boogiedownproductions.files.wordpress.com/2015/08/americana1.jpg?w=1500&h=1261&crop=1"));
+        products.put(9L, new Product(9L, "Oregon", "27", SHOES, "https://i1.adis.ws/i/jpl/jd_053254_a?qlt=80&w=600&h=425&v=1"));
+        products.put(10L, new Product(10L, "Energy Boost", "28", SHOES, "https://runnerclick.com/wp-content/uploads/2017/09/Adidas-Energy-Boost-left-to-right-slider1400x900.jpg?t=1504792961"));
+        products.put(11L, new Product(11L, "Rod Laver", "29", SHOES, "https://images-na.ssl-images-amazon.com/images/I/616hrsyGQYL._UY395_.jpg"));
 
-        products.put(3L, new Product(3L, "Original Boot", "38", SHOES, "https://www.adidas.es/dis/dw/image/v2/aagl_prd/on/demandware.static/-/Sites-adidas-products/default/dwc7a601dc/zoom/CQ2626_01_standard.jpg?sh=840&strip=false&sw=840"));
-        products.put(4L, new Product(4L, "Original Boot", "43", SHOES, "https://www.adidas.es/dis/dw/image/v2/aagl_prd/on/demandware.static/-/Sites-adidas-products/default/dw44c162a4/zoom/BB5476_01_standard.jpg?sh=840&strip=false&sw=840"));
-        products.put(5L, new Product(5L, "Original Boot", "47", SHOES, "https://www.adidas.es/dis/dw/image/v2/aagl_prd/on/demandware.static/-/Sites-adidas-products/default/dw2051f732/zoom/B22681_01_standard.jpg?sh=840&strip=false&sw=840"));
-        products.put(6L, new Product(6L, "Original Boot", "50", SHOES, "https://www.adidas.es/dis/dw/image/v2/aagl_prd/on/demandware.static/-/Sites-adidas-products/default/dw5af3ce36/zoom/BB2091_01_standard.jpg?sh=840&strip=false&sw=840"));
-        products.put(7L, new Product(7L, "Original Boot", "36", SHOES, "https://www.adidas.es/dis/dw/image/v2/aagl_prd/on/demandware.static/-/Sites-adidas-products/default/dw9d6ca300/zoom/CQ2631_01_standard.jpg?sh=840&strip=false&sw=840"));
-        products.put(8L, new Product(8L, "Original Boot", "48", SHOES, "https://www.adidas.es/dis/dw/image/v2/aagl_prd/on/demandware.static/-/Sites-adidas-products/default/dw3c05e2f0/zoom/DA9165_01_standard.jpg?sh=840&strip=false&sw=840"));
-        products.put(9L, new Product(9L, "Original Boot", "27", SHOES, "https://www.adidas.es/dis/dw/image/v2/aagl_prd/on/demandware.static/-/Sites-adidas-products/default/dw17a358cc/zoom/CQ0414_01_standard.jpg?sh=840&strip=false&sw=840"));
-        products.put(10L, new Product(10L, "Original Boot", "28", SHOES, "https://www.adidas.es/dis/dw/image/v2/aagl_prd/on/demandware.static/-/Sites-adidas-products/default/dw13a39234/zoom/B27140_01_standard.jpg?sh=840&strip=false&sw=840"));
-        products.put(11L, new Product(11L, "Original Boot", "29", SHOES, "https://www.adidas.es/dis/dw/image/v2/aagl_prd/on/demandware.static/-/Sites-adidas-products/default/dw5abb04a3/zoom/AC8597_01_standard.jpg?sh=840&strip=false&sw=840"));
-
-        products.put(12L, new Product(12L, "Spain", "40", CLOTHES, "https://www.adidas.es/dis/dw/image/v2/aagl_prd/on/demandware.static/-/Sites-adidas-products/default/dwe2b9a02c/zoom/CZ4546_21_model.jpg?sh=840&strip=false&sw=840"));
-        products.put(13L, new Product(13L, "Argentina", "41", CLOTHES, "https://www.adidas.es/dis/dw/image/v2/aagl_prd/on/demandware.static/-/Sites-adidas-products/default/dw0a45fb0c/zoom/CW0705_21_model.jpg?sh=840&strip=false&sw=840"));
-        products.put(14L, new Product(14L, "Brazil", "38", CLOTHES, "https://www.adidas.es/dis/dw/image/v2/aagl_prd/on/demandware.static/-/Sites-adidas-products/default/dw6e5f999d/zoom/CE2343_21_model.jpg?sh=840&strip=false&sw=840"));
-        products.put(15L, new Product(15L, "Germany", "43", CLOTHES, "https://www.adidas.es/dis/dw/image/v2/aagl_prd/on/demandware.static/-/Sites-adidas-products/default/dw1406f4e6/zoom/CW1202_21_model.jpg?sh=840&strip=false&sw=840"));
-        products.put(16L, new Product(16L, "Portugal", "43", CLOTHES, "https://www.adidas.es/dis/dw/image/v2/aagl_prd/on/demandware.static/-/Sites-adidas-products/default/dw30f58148/zoom/CW1207_21_model.jpg?sh=840&strip=false&sw=840"));
-        products.put(17L, new Product(17L, "Peru", "43", CLOTHES, "https://www.adidas.es/dis/dw/image/v2/aagl_prd/on/demandware.static/-/Sites-adidas-products/default/dwfc8e29f6/zoom/CZ4545_21_model.jpg?sh=840&strip=false&sw=840"));
-        products.put(18L, new Product(18L, "Greece", "43", CLOTHES, "https://www.adidas.es/dis/dw/image/v2/aagl_prd/on/demandware.static/-/Sites-adidas-products/default/dw54ab193f/zoom/CE2340_21_model.jpg?sh=840&strip=false&sw=840"));
-        products.put(19L, new Product(19L, "Venezuela", "43", CLOTHES, "https://www.adidas.es/dis/dw/image/v2/aagl_prd/on/demandware.static/-/Sites-adidas-products/default/dw3f81aa4f/zoom/CE2337_21_model.jpg?sh=840&strip=false&sw=840"));
-        products.put(20L, new Product(20L, "South Africa", "43", CLOTHES, "https://www.adidas.es/dis/dw/image/v2/aagl_prd/on/demandware.static/-/Sites-adidas-products/default/dw318a9d2e/zoom/CE1557_21_model.jpg?sh=840&strip=false&sw=840"));
-        products.put(21L, new Product(21L, "China", "43", CLOTHES, "https://www.adidas.es/dis/dw/image/v2/aagl_prd/on/demandware.static/-/Sites-adidas-products/default/dw1b7fedff/zoom/CW0709_21_model.jpg?sh=840&strip=false&sw=840"));
-        products.put(22L, new Product(22L, "Japan", "43", CLOTHES, "https://www.adidas.es/dis/dw/image/v2/aagl_prd/on/demandware.static/-/Sites-adidas-products/default/dwc1032e84/zoom/CE1819_21_model.jpg?sh=840&strip=false&sw=840"));
-        products.put(23L, new Product(23L, "Australia", "43", CLOTHES, "https://www.adidas.es/dis/dw/image/v2/aagl_prd/on/demandware.static/-/Sites-adidas-products/default/dwbbb4ee78/zoom/CW2339_21_model.jpg?sh=840&strip=false&sw=840"));
+        products.put(12L, new Product(12L, "Spain", "S", CLOTHES, "https://images.sportsdirect.com/images/products/37128708_l.jpg"));
+        products.put(13L, new Product(13L, "Argentina", "M", CLOTHES, "https://www.soccermaster.com/wp-content/uploads/bq9329_adidas_argentina_authentic_home_jsy_sm_01.jpg"));
+        products.put(14L, new Product(14L, "Brazil", "L", CLOTHES, "https://i3.stycdn.net/images/article/06.07/KT49429-2-0.jpg"));
+        products.put(15L, new Product(15L, "Germany", "XL", CLOTHES, "https://images.sportsdirect.com/images/products/37128130_l.jpg"));
+        products.put(16L, new Product(16L, "Portugal", "XXL", CLOTHES, "http://www.footballshirtculture.com/images/2017/adidas_1992_portugal_match_worn_us_cup_home_shirt_domingos.jpg"));
+        products.put(17L, new Product(17L, "Peru", "XXXL", CLOTHES, "https://http2.mlstatic.com/casaca-adidas-peru-original-nueva-talla-s-roja-retro-mundial-D_NQ_NP_977174-MPE26211095456_102017-F.jpg"));
+        products.put(18L, new Product(18L, "Greece", "XS", CLOTHES, "https://www.footy-boots.com/wp-content/uploads/2007/10/greeceshirt.jpg"));
+        products.put(19L, new Product(19L, "Venezuela", "XXS", CLOTHES, "https://images-na.ssl-images-amazon.com/images/I/71eXyiZ8KYL._SY355_.jpg"));
+        products.put(20L, new Product(20L, "South Africa", "M", CLOTHES, "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi05C3Tj1max8_3k1TtepH688vvM1XOy-Hz1isRW5iC3aJVI-PNA"));
+        products.put(21L, new Product(21L, "China", "M", CLOTHES, "http://www.sportingplus.net/5608-thickbox_default/camiseta-de-futbol-seleccion-china-primera-201415-adidas.jpg"));
+        products.put(22L, new Product(22L, "Japan", "S", CLOTHES, "http://picture-cdn.wheretoget.it/y3bcia-i.jpg"));
+        products.put(23L, new Product(23L, "Australia", "L", CLOTHES, "https://i.ebayimg.com/images/g/TFgAAOSw~CFY6vyR/s-l300.jpg"));
 
         stocks.put("1-1", new Stock(stores.get(1L), products.get(1L), 1));
         stocks.put("1-2", new Stock(stores.get(1L), products.get(2L), 45));
